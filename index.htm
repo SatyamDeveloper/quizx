@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuizX</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body oncopy="return false" onpaste="return false">
+    <img src="./images/bg.jpg" alt="mera bg" ondrag="false">
+    <header>
+      <h1 onclick="location.reload()">QuizX</h1>
+      <div class="btn_group">
+        <button onclick="location.reload()">New Quiz</button>
+        <button>Submit</button>
+      </div>
+    </header>
+    <div id="score" class="din"></div>
+    <div class="form">
+      <div class="box">
+        <p>What is Force?</p>
+        <div class="option">
+          <label><input type="radio" name="ans" id="ans1"/><h3>Hello</h3></label>
+          <label><input type="radio" name="ans" id="ans2"/><h3>Hello</h3></label>
+          <label> <input type="radio" name="ans" id="ans3"/><h3>Hello</h3></label>
+          <label><input type="radio" name="ans" id="ans4"/><h3>Hello</h3></label>
+        </div>
+        <button type="submit">Next</button>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
