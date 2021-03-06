@@ -101,6 +101,7 @@ const data = [
   },
 ];
 
+
 const question = document.querySelector("body > div > div > p");
 const answers = document.querySelectorAll(
   "body > div > div > div > label > input"
@@ -109,16 +110,24 @@ const options = document.querySelectorAll(
   "body > div > div > div > label > h3"
 );
 const nextButton = document.querySelector("body > div > div > button");
-const showScore = document.getElementById("score");
+const showScore = document.querySelector("body > div > div > #score");
+const side = document.querySelector("body > div > .side");
+const box = document.querySelector("body > div > .box");
 
 let q_n = 0;
 let score = 0;
 let result = [];
+let correct = [];
+
+
+// console.log(Math.floor(Math.random()*data[q_n].options.length));
 
 const setData = () => {
   question.innerHTML = `${q_n + 1}. ${data[q_n].question}`;
-
+  
   for (let i = 0; i < options.length; i++) {
+    // const regex = Math.floor(Math.random()*data[q_n].options.length)
+    // options[i].innerHTML = data[q_n].options[regex];
     options[i].innerHTML = data[q_n].options[i];
   }
 };
@@ -146,12 +155,20 @@ const deselect = () => {
 nextButton.addEventListener("click", () => {
   const check = getcheck();
 
-  console.log(check);
-
   if (check === data[q_n].answer) {
     score++;
+    correct.push(
+      `${box.innerHTML}<h3>Your Answer: <b>${
+        check || "Not answered"
+      }</b><br>  Correct Answer: <b>${data[q_n].answer}</b></h3>`
+    );
   } else {
     result.push(q_n + 1);
+    correct.push(
+      `${box.innerHTML}<h3>Your Answer: <b>${
+        check || "Not answered"
+      }</b><br>  Correct Answer: <b>${data[q_n].answer}</b></h3>`
+    );
   }
 
   q_n++;
@@ -161,10 +178,21 @@ nextButton.addEventListener("click", () => {
   if (q_n < data.length) {
     setData();
   } else {
-    showScore.innerHTML = `Your score is "${score}/${data.length}" and you have given wrong answers of q/no. "${result}" ✌😎<button onclick="location.reload()">Play Again</button>`;
+    showScore.innerHTML = `<h3>Your Score: <b>${score}/${data.length}</b></h3>
+    <h4>Wrong Answers of Q/no: <b>${result}</b></h4>
+    <button onclick="location.reload()">Play Again</button>`;
 
     showScore.classList.remove("din");
 
-    nextButton.style.display = 'none';
+    for (let q = 0; q < correct.length; q++) {
+      const element = correct[q];
+
+      const correctDiv = document.createElement("div");
+      correctDiv.classList.add("correct");
+      correctDiv.innerHTML = correct[q];
+      side.appendChild(correctDiv);
+    }
+
+    side.classList.remove("din");
   }
 });

@@ -92,48 +92,6 @@ body header .btn_group button {
   font-size: 16px;
 }
 
-body .din {
-  display: none;
-  opacity: 0;
-  pointer-events: none;
-}
-
-body #score {
-  word-wrap: break-word;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-  -webkit-box-shadow: 0 5px 10px rgba(128, 128, 128, 0.3);
-          box-shadow: 0 5px 10px rgba(128, 128, 128, 0.3);
-  position: absolute;
-  border-radius: 5px;
-  font-size: 25px;
-  left: 0;
-  bottom: 0;
-  background: #fff;
-}
-
-body #score button {
-  margin-top: 5px;
-  outline: none;
-  width: 100%;
-  padding: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
 body .form {
   width: 100%;
   height: calc(100% - 50px);
@@ -146,10 +104,96 @@ body .form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+body .form .din {
+  display: none;
+  pointer-events: none;
+  opacity: 0;
+}
+
+body .form .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  overflow-y: scroll;
+  background: #fff;
+}
+
+body .form .side .correct {
+  border-bottom: 1px solid #000;
+}
+
+body .form .side .correct #score {
+  display: none;
+  pointer-events: none;
+}
+
+body .form .side .correct p {
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+body .form .side .correct .option {
+  margin-top: 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .form .side .correct .option label {
+  width: calc(100% / 2.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  padding: 5px;
+  margin: 5px;
+}
+
+body .form .side .correct .option label input {
+  margin-right: 10px;
+}
+
+body .form .side .correct button {
+  display: none;
+  pointer-events: none;
+}
+
+body .form .side .correct h3 {
+  font-weight: 400;
+  width: 100%;
+  padding: 0 10px;
+  margin: 5px 0;
 }
 
 body .form .box {
-  width: 40%;
+  width: 35%;
   height: 70%;
   border-radius: 7px;
   background: #fff;
@@ -169,6 +213,56 @@ body .form .box {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+
+body .form .box .din {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body .form .box #score {
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(128, 128, 128, 0.3);
+          box-shadow: 0 5px 10px rgba(128, 128, 128, 0.3);
+  position: absolute;
+  font-size: 25px;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+body .form .box #score h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+body .form .box #score h4 {
+  font-weight: 400;
+}
+
+body .form .box #score button {
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 body .form .box p {
