@@ -1,103 +1,18 @@
 const data = [
   {
-    question: "What is balanced force?",
-    options: ["something", "nothing", "either", "neither"],
+    question: "Full form of HTML",
+    options: ["Hyper Teck Mark Language", "Hyper Text Markup Language", "Hyper Tick Markup Language", "all of the above"],
+    answer: "ans2",
+  },
+  {
+    question: "Full form of CSS",
+    options: ["Chrome Spread Sheet", "Cascading Style Spreadsheet", "Cascading Style Sheet", "None"],
+    answer: "ans3",
+  },
+  {
+    question: "Full form of JS",
+    options: ["Javascript", "Javaspreadsheet", "Javasheet", "all of the above"],
     answer: "ans1",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
-  },
-  {
-    question: "What is circumscribed force?",
-    options: ["Hellso", "bsdfelo", "celfdslo", "defsllo"],
-    answer: "ans2",
   },
 ];
 
